@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uZS-Nt-XK5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -17,6 +15,22 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0vq-CC-sbK">
+            <objects>
+                <navigationController id="uZS-Nt-XK5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mbg-l4-vXc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="O8y-EF-uyW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADy-AT-0q5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-872" y="98"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -46,7 +60,7 @@
                                     <fragment content="توجيهات">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="33" name="Cairo-Bold"/>
+                                            <font key="NSFont" metaFont="system" size="33"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -64,21 +78,11 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="التمرين السريع">
+                                    <fragment content="التمرين السريع يطلب منك فقط إن كتبت اسمك يتم نقلك إلى الصفحة التالية. إن لم تكتب اسمك بالشكل الصحيح، لن يتم نقلك">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="Cairo-SemiBold"/>
-                                            <font key="NSOriginalFont" size="11" name="Cairo-Black"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" paragraphSpacingBefore="6" lineHeightMultiple="1.5" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" يطلب منك فقط إن كتبت اسمك يتم نقلك إلى الصفحة التالية. إن لم تكتب اسمك بالشكل الصحيح، لن يتم نقلك">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="Cairo-SemiBold"/>
-                                            <font key="NSOriginalFont" size="11" name="CoconNextArabic-Light"/>
+                                            <font key="NSFont" metaFont="message" size="11"/>
+                                            <font key="NSOriginalFont" metaFont="message" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" paragraphSpacingBefore="6" lineHeightMultiple="1.5" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -87,7 +91,7 @@ Cg
                                     <fragment content=" إلا إذا أدخلت اسم مكون من حرفين وأكثر">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="Cairo-SemiBold"/>
+                                            <font key="NSFont" metaFont="message" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" paragraphSpacingBefore="6" lineHeightMultiple="1.5" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -98,8 +102,8 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="Cairo-SemiBold"/>
-                                            <font key="NSOriginalFont" size="11" name="CoconNextArabic-Light"/>
+                                            <font key="NSFont" metaFont="message" size="11"/>
+                                            <font key="NSOriginalFont" metaFont="message" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" paragraphSpacingBefore="6" lineHeightMultiple="1.5" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -109,49 +113,19 @@ Cg
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="11" name="AppleColorEmoji"/>
-                                            <font key="NSOriginalFont" size="11" name="Cairo-Black"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" حق الشطار.">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="Cairo-SemiBold"/>
-                                            <font key="NSOriginalFont" size="11" name="Cairo-Black"/>
+                                            <font key="NSOriginalFont" metaFont="message" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content"> إذا كتب اسمه غلط، يطلع له Alert يقوله "لا تستعبط"
-</string>
+                                        <string key="content"> حق الشطار. إذا كتب اسمه غلط، يطلع له Alert يقوله "لا تستعبط"
+التمرين الأول Classwork 1 رح يكون إذا كتبت اسمك بالصفحة الأولى يقولك مرحباً باسمك بالصفحة الثانية. يعني من الآخر، انقل اسمك الصفحة الثانية</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="Cairo-SemiBold"/>
-                                            <font key="NSOriginalFont" size="11" name="CoconNextArabic-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="التمرين الأول Classwork 1">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="Cairo-SemiBold"/>
-                                            <font key="NSOriginalFont" size="11" name="Cairo-Black"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" رح يكون إذا كتبت اسمك بالصفحة الأولى يقولك مرحباً باسمك بالصفحة الثانية. يعني من الآخر، انقل اسمك الصفحة الثانية">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="11" name="Cairo-SemiBold"/>
-                                            <font key="NSOriginalFont" size="11" name="CoconNextArabic-Light"/>
+                                            <font key="NSFont" metaFont="message" size="11"/>
+                                            <font key="NSOriginalFont" metaFont="message" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -160,7 +134,7 @@ Cg
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17l-M1-nnE" customClass="CustomButton" customModule="speedtest_7" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17l-M1-nnE" customClass="CustomButton" customModule="speedtest_7" customModuleProvider="target">
                                 <rect key="frame" x="106" y="351" width="200" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23529411764705882" green="0.58823529411764708" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -197,12 +171,15 @@ Cg
                                         <size key="value" width="4" height="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OB3-5q-Q4g"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="قم بكتابة اسمك" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0V-Yg-VrJ">
                                 <rect key="frame" x="20" y="264" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGM-Un-Oi8">
                                 <rect key="frame" x="20" y="297" width="374" height="1"/>
@@ -213,18 +190,23 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LWR-l0-7Fh"/>
+                    <connections>
+                        <outlet property="nameField" destination="g0V-Yg-VrJ" id="mJV-Sm-2P5"/>
+                        <segue destination="dlM-8a-Plg" kind="show" identifier="details" id="itz-9Z-ctw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-57.971014492753625" y="98.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondVC-->
         <scene sceneID="Zxe-0s-px6">
             <objects>
-                <viewController id="dlM-8a-Plg" sceneMemberID="viewController">
+                <viewController id="dlM-8a-Plg" customClass="SecondVC" customModule="speedtest_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RoV-Tz-fIb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,23 +226,17 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="D0E-r7-42x"/>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="D0E-r7-42x"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AqZ-rl-bjr"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="D5Y-cU-Ivv" id="Jrb-mB-qLm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atr-XV-rX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="865.21739130434787" y="94.419642857142847"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="17l-M1-nnE">
-            <size key="intrinsicContentSize" width="127" height="30"/>
-        </designable>
-    </designables>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
